@@ -28,6 +28,15 @@ pipeline {
                 sh 'npm install'
             }
         }
+        stage('docker build'){
+            steps{
+                sh """
+                  docker build -t srivalliavala7/backend:${appVersion} .
+                  docker images
+                """
+            }
+
+        }
     }
 
     post {
