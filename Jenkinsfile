@@ -49,7 +49,7 @@ pipeline {
                 sh 'npm install'
             }
         }
-        /* stage('SonarQube analysis') {
+         stage('SonarQube analysis') {
             environment {
                 SCANNER_HOME = tool 'sonar-6.0' //scanner config
             }
