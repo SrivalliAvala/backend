@@ -1,4 +1,4 @@
-/*@Library('jenkins-shared-library') _ // gets the global pipeline libraries in system configuration
+@Library('jenkins-shared-library') _ // gets the global pipeline libraries in system configuration
 
 def configmap = [
     project: "expense",
@@ -10,10 +10,10 @@ if( ! env.BRANCH_NAME.equalsIgnoreCase('main')){ // true, if branch is feature b
 }
 else{
     echo "Follow the process of PROD release"
-}*/
+}
 
 
-
+/*
 pipeline {
     agent {
         label 'agent-1'
@@ -107,7 +107,7 @@ pipeline {
             echo "This section run when pipeline success"
         }
         failure{
-            echo "This section run when pipeline failure"
+            echo "This section run when pipeline failure"*/
         }
     }
 }
