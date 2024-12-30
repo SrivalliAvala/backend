@@ -13,6 +13,7 @@ else{
 }
 
 
+
 /*
 pipeline {
     agent {
@@ -67,7 +68,7 @@ pipeline {
                     waitForQualityGate abortPipeline: true
                 }
             }
-        } */
+        } 
         stage('Docker build') {
             
             steps {
@@ -110,4 +111,4 @@ pipeline {
             echo "This section run when pipeline failure"*/
         }
     }
-}
+}*/
